@@ -194,7 +194,6 @@ class SellerForm extends React.Component {
   }
 
   validateRequiredFields (formValues) {
-    console.log(formValues)
     const errors = []
     for (const key of Object.keys(formValues)) {
       if (key === 'name' && !formValues[key]) {
@@ -293,9 +292,6 @@ class SellerForm extends React.Component {
           />
 
           {/* Action buttons */}
-          {console.log(pristine)}
-          {console.log(formErrors)}
-          {console.log(editMode)}
           <div className="buttons-container">
             <Button
               type="button"

@@ -5,7 +5,7 @@ module.exports = {
   entry: './src/index.js',
   output: {
     path: path.resolve(__dirname + '/build'),
-    publicPath: '/',
+    publicPath: '/simple-react-app/',
     filename: 'bundle.js',
   },
   devServer: {
@@ -47,6 +47,7 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       template: path.resolve('./index.html'),
+      favicon: path.resolve('./src/assets/images/favicon.gif')
     })
   ],
 };

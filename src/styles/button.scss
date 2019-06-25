@@ -1,0 +1,25 @@
+@import './constants';
+
+.button {
+  font-family: 'Roboto';
+  font-size: 13px;
+  border-radius: 2px;
+  color: white;
+  width: $buttonWidth;
+  height: $buttonHeight;
+  margin: 5px;
+
+  &.active {
+    background-color: #33a7b3;
+    cursor: pointer;
+    transition: transform .2s;
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  &.disable {
+    background-color: #d8d5d5;
+    border-color: #d8d5d5
+  }
+}

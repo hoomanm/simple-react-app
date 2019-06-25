@@ -1,0 +1,42 @@
+table {
+  border-collapse: collapse;
+  margin: 40px 10px 40px 30px;
+  table-layout: fixed;
+}
+
+td {
+  border-bottom:1pt solid #ccc9c9;
+  text-align: left;
+  padding: 5px 15px;
+  &.name {
+    width:4 0%;
+  }
+  &.deals {
+    text-align:center;
+    width: 15%;
+  }
+  &.lists {
+    width: 10%;
+  }
+  &.actions {
+    width: 10%;
+    cursor: pointer;
+    img {
+      padding: 5px;
+      vertical-align: middle;
+      transition: transform .2s;
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+  }
+}
+
+tr {
+  &.body {
+    height: 40px;
+  }
+  &.header {
+    color: grey;
+  }
+}

@@ -1,0 +1,98 @@
+@import './constants';
+
+.multiSelect-container {
+  position: relative;
+  width: $inputFieldWidth;
+  height: 50px;
+}
+
+.selectField {
+  width: $inputFieldWidth;
+  margin-left: 5px;
+  visibility: hidden;
+}
+
+.selector {
+  display: inline-block;
+  width: $inputFieldWidth;
+  border: 1px solid black;
+  margin-top: 10px;
+  border-radius: 5px;
+  padding: 5px;
+  &.withMenu {
+    border-bottom: none;
+    border-radius: 5px 5px 0 0;
+    border-color: #87a6cc;
+  }
+  &.error {
+    border-color: red;
+  }
+}
+
+.selector-placeholder {
+  font-size: 14px;
+  color: grey;
+}
+
+.selector-icon {
+  float: right;
+  margin-top: 2px;
+  cursor: pointer;
+}
+
+.menu {
+  position: absolute;
+  top: 40px;
+  text-align: left;
+  border: 1px solid black;
+  z-index: 11;
+  overflow-y: auto;
+  width: 230px;
+  font-size: 14px;
+  background: white;
+  border-radius: 0 0 5px 5px;
+  &.hidden {
+    visibility: hidden;
+    max-height: 0;
+    transition: max-height 2s ease;
+  }
+  &.visible {
+    visibility: visible;
+    max-height: 500px;
+    border-top: none;
+    margin-top: -1px;
+    border-color: #87a6cc;
+    overflow: hidden;
+    transition: max-height 2s ease;
+    -webkit-transition: max-height 2s ease;
+    -moz-transition: max-height 2s ease;
+    -ms-transition: max-height 2s ease;
+    -o-transition: max-height 2s ease;
+  }
+  & .menuItem {
+    border-top: 1px solid gainsboro;
+    padding: 5px;
+    cursor: pointer;
+    &:hover {
+      background-color: #e3e9f2;
+    }
+  }
+}
+
+.selectedOption {
+  background-color: #b0dad6;
+  font-size: 13px;
+  border: 1px solid;
+  border-radius: 5px;
+  padding: 2px;
+  margin-right: 3px;
+}
+
+.dropdown-icon {
+  margin-right: 5px;
+}
+
+.x-icon {
+  margin-left: 2px;
+  cursor: pointer;
+}

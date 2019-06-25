@@ -1,0 +1,23 @@
+{
+  "parser": "babel-eslint",
+  "extends": "react",
+  "rules": {
+    "semi": [2, "never"],
+    "indent": ["error", 2],
+    "comma-dangle": ["error", "always-multiline"],
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn"
+  },
+  "plugins": [
+    "react-hooks"
+  ],
+  "env": {
+    "browser": true,
+    "node": true
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  }
+}

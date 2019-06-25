@@ -1,0 +1,21 @@
+@import './constants';
+
+.textField {
+  font-family: 'Roboto';
+  font-size: 15px;
+  border: 1px solid black;
+  border-radius: 3px;
+  padding: 5px;
+  width: $inputFieldWidth;
+  margin-top: 5px;
+  &.error {
+    border-color: red;
+  }
+}
+
+.errorMessage {
+  font-size: 12px;
+  color: red;
+  margin-top: 3px;
+  height: 1px;
+}
